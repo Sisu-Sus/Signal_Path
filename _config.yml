@@ -27,8 +27,8 @@ collections:
     
 defaults:
   - scope:
-      path: "_posts"
-      type: "posts"
+      path: "_currents"
+      type: "currents"
     values:
       layout: "default"
       author: "Sisu-Sus"
