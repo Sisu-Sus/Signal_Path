@@ -1,0 +1,44 @@
+---
+title: "Signal Path"
+description: "Deep review and Analysis of Signal Path from Coax -> User"
+baseurl: "/Signal_Path/"
+url: "https://sisu-sus.github.io"
+
+author:
+  name: "Sisu-Sus"
+  email: "fixitdunbreakit@gmail.com"
+  bio: "Security researcher specializing in web app security"
+  location: "Global"
+  github: "sisu-sus"
+  avatar: https://raw.githubusercontent.com/pages-themes/hacker/master/thumbnail.png
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+collections:
+  research:
+    output: true
+    permalink: /:collection/:name/
+    
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
+      author: "Sisu-Sus"
+  - scope:
+      path: "_research"
+      type: "research"
+    values:
+      layout: "default"
+      author: "Sisu-Sus"
+      
+future: false
+show_drafts: false
+---
