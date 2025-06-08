@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Sec Posts"
+title: "Current Projects"
 permalink: /posts/
 ---
 
-# All Security Posts
+# All Current Projects
 
 {% for post in site.posts %}
 ## [{{ post.title }}]({{ post.url | relative_url }})
