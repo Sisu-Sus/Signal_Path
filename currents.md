@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Current Projects"
-permalink: /posts/
+permalink: /currents/
 ---
 
 # All Current Projects
