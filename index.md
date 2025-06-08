@@ -21,7 +21,7 @@ title: "Home"
 {% endif %}
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="{{ '/posts/' | relative_url }}" style="background: #4CAF50; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold;">View All Posts</a>
+  <a href="{{ '/_currents/' | relative_url }}" style="background: #4CAF50; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold;">View All Posts</a>
 </div>
 
 ## 🔬 Previous Research
