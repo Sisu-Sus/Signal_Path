@@ -6,22 +6,22 @@ title: "Home"
 ## Current Projects
 
 {% if site.currents.size > 0 %}
-{% for post in site.currents limit:3 %}
+{% for currents in site.currents limit:3 %}
 <div style="background: #2a2a2a; padding: 1.5rem; margin: 1rem 0; border-left: 4px solid #4CAF50; border-radius: 4px;">
-  <h3><a href="{{ post.url | relative_url }}" style="color: #ffffff; text-decoration: none;">{{ post.title }}</a></h3>
-  <p style="color: #888; margin: 0.5rem 0;">{{ post.date | date: "%B %d, %Y" }}</p>
-  {% if post.excerpt %}
-  <p style="color: #ccc;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  <h3><a href="{{ currents.url | relative_url }}" style="color: #ffffff; text-decoration: none;">{{ currents.title }}</a></h3>
+  <p style="color: #888; margin: 0.5rem 0;">{{ currents.date | date: "%B %d, %Y" }}</p>
+  {% if currents.excerpt %}
+  <p style="color: #ccc;">{{ currents.excerpt | strip_html | truncatewords: 30 }}</p>
   {% endif %}
-  <a href="{{ post.url | relative_url }}" style="color: #4CAF50; text-decoration: none; font-weight: bold;">Read More →</a>
+  <a href="{{ currents.url | relative_url }}" style="color: #4CAF50; text-decoration: none; font-weight: bold;">Read More →</a>
 </div>
 {% endfor %}
 {% else %}
-<p style="color: #888; font-style: italic;">No posts yet. Create your first post in the _posts directory!</p>
+<p style="color: #888; font-style: italic;">No currentss yet. Create your first currents in the _currentss directory!</p>
 {% endif %}
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="{{ '/currents/' | relative_url }}" style="background: #4CAF50; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold;">View All Posts</a>
+  <a href="{{ '/currents/' | relative_url }}" style="background: #4CAF50; color: white; padding: 0.8rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold;">View Current Project</a>
 </div>
 
 ## 🔬 Previous Research
