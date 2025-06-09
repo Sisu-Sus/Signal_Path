@@ -6,24 +6,24 @@ permalink: /currents/
 
 # All Current Projects
 
-{% for post in site.currents %}
-## [{{ post.title }}]({{ post.url | relative_url }})
+{% for currents in site.currents %}
+## [{{ currents.title }}]({{ currents.url | relative_url }})
 
-**{{ post.date | date: "%B %d, %Y" }}**
+**{{ currents.date | date: "%B %d, %Y" }}**
 
-{% if post.categories.size > 0 %}
-**Categories:** {% for category in post.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+{% if currents.categories.size > 0 %}
+**Categories:** {% for category in currents.categories %}{{ category }}{% unless forloop.last %}, {% endunless %}{% endfor %}
 {% endif %}
 
-{% if post.tags.size > 0 %}
-**Tags:** {% for tag in post.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+{% if currents.tags.size > 0 %}
+**Tags:** {% for tag in currents.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
 {% endif %}
 
-{% if post.excerpt %}
-{{ post.excerpt }}
+{% if currents.excerpt %}
+{{ currents.excerpt }}
 {% endif %}
 
-[Read More →]({{ post.url | relative_url }})
+[Read More →]({{ currents.url | relative_url }})
 
 ---
 {% endfor %}
