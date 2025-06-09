@@ -6,7 +6,7 @@ permalink: /currents/
 
 # All Current Projects
 
-{% for post in site.posts %}
+{% for post in site.currents %}
 ## [{{ post.title }}]({{ post.url | relative_url }})
 
 **{{ post.date | date: "%B %d, %Y" }}**
