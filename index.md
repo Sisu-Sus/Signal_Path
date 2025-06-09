@@ -17,7 +17,7 @@ title: "Home"
 </div>
 {% endfor %}
 {% else %}
-<p style="color: #888; font-style: italic;">No currentss yet. Create your first currents in the _currentss directory!</p>
+<p style="color: #888; font-style: italic;">No currents yet. Create your first currents in the _currents directory!</p>
 {% endif %}
 
 <div style="text-align: center; margin: 2rem 0;">
