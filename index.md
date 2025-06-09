@@ -5,8 +5,8 @@ title: "Home"
 
 ## Current Projects
 
-{% if site.posts.size > 0 %}
-{% for post in site.posts limit:3 %}
+{% if site.currents.size > 0 %}
+{% for post in site.currents limit:3 %}
 <div style="background: #2a2a2a; padding: 1.5rem; margin: 1rem 0; border-left: 4px solid #4CAF50; border-radius: 4px;">
   <h3><a href="{{ post.url | relative_url }}" style="color: #ffffff; text-decoration: none;">{{ post.title }}</a></h3>
   <p style="color: #888; margin: 0.5rem 0;">{{ post.date | date: "%B %d, %Y" }}</p>
